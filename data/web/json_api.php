@@ -1033,6 +1033,7 @@ if (isset($_SESSION['mailcow_cc_role']) || isset($_SESSION['pending_mailcow_cc_u
                   }
                   else {
                     $json = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_NUMERIC_CHECK | JSON_PRETTY_PRINT);
+
                     if ($json) {
                       echo $json;
                     } else {
